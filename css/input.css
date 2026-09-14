@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Francosphère — stylesheet source
+   Compiled to css/styles.css by the Tailwind CLI. See BUILD.md.
+   ========================================================================== */
+
+/* --- self-hosted fonts (no request leaves the server) --------------------- */
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/fonts/montserrat-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/fonts/montserrat-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/fonts/montserrat-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 800; font-display: swap; src: url("../assets/fonts/montserrat-latin-800-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 900; font-display: swap; src: url("../assets/fonts/montserrat-latin-900-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/fonts/montserrat-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/fonts/montserrat-latin-ext-700-normal.woff2") format("woff2"); unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Montserrat"; font-style: normal; font-weight: 800; font-display: swap; src: url("../assets/fonts/montserrat-latin-ext-800-normal.woff2") format("woff2"); unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Roboto"; font-style: normal; font-weight: 300; font-display: swap; src: url("../assets/fonts/roboto-latin-300-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Roboto"; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/fonts/roboto-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Roboto"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/fonts/roboto-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Roboto"; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/fonts/roboto-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: "Roboto"; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/fonts/roboto-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Roboto"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/fonts/roboto-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Roboto Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/fonts/roboto-mono-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Roboto Mono"; font-style: normal; font-weight: 500; font-display: swap; src: url("../assets/fonts/roboto-mono-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .shell { @apply w-[92vw] max-w-shell mx-auto; }
+
+  .btn       { @apply inline-flex items-center gap-2 rounded-pill px-6 py-3 font-display text-[.9rem] font-bold tracking-tight transition; }
+  .btn-gold  { @apply bg-goldgrad text-ink shadow-[0_6px_26px_-10px_rgba(249,199,15,.8)] hover:-translate-y-0.5; }
+  .btn-ghost { @apply border border-white/25 text-paper hover:border-gold hover:text-gold; }
+
+  .chip { @apply rounded-pill border border-white/10 px-3 py-1 text-[.76rem] font-medium text-paper/60 transition hover:border-gold hover:bg-gold/10 hover:text-gold; }
+  .pill { @apply rounded-pill border border-white/10 px-4 py-1.5 text-[.83rem] font-medium text-paper/60 transition hover:border-white/25 hover:text-paper; }
+  .pill[aria-pressed="true"] { @apply bg-gold border-gold font-bold text-ink; }
+
+  .tag     { @apply rounded border border-white/10 px-2.5 py-0.5 font-mono text-[.66rem] tracking-wide text-paper/60; }
+  .tag-hot { @apply border-gold/50 text-gold; }
+
+  .row    { @apply flex gap-3 border-t border-white/10 py-3 text-[.87rem]; }
+  .row dt { @apply w-[72px] shrink-0 pt-1 font-mono text-[.68rem] uppercase tracking-wider text-paper/60; }
+  .row dd { @apply m-0 font-medium break-words; }
+
+  .sec-title { @apply font-display text-[clamp(1.85rem,3.3vw,2.75rem)] font-extrabold leading-tight tracking-[-.03em]; }
+  .rule      { @apply mb-6 h-1 w-16 rounded bg-goldgrad; }
+
+  /* Event bodies arrive from Directus as HTML, so they need element selectors. */
+  .prose-fs h2 { @apply mb-3 mt-8 font-display text-xl font-bold tracking-tight; }
+  .prose-fs h3 { @apply mb-2 mt-6 font-display text-lg font-bold; }
+  .prose-fs p  { @apply mb-4 text-paper/80; }
+  .prose-fs ul { @apply mb-4 list-disc pl-5 text-paper/80; }
+  .prose-fs ol { @apply mb-4 list-decimal pl-5 text-paper/80; }
+  .prose-fs li { @apply mb-2; }
+  .prose-fs a  { @apply text-gold underline; }
+}
+
+@layer utilities {
+  /* The few rules Tailwind can't express. */
+  .scroll-thin::-webkit-scrollbar { width: 6px; }
+  .scroll-thin::-webkit-scrollbar-thumb { background: rgba(240, 243, 244, .16); border-radius: 3px; }
+
+  .hero-photo {
+    -webkit-mask-image: radial-gradient(78% 78% at 70% 46%, #000 26%, transparent 76%);
+    mask-image: radial-gradient(78% 78% at 70% 46%, #000 26%, transparent 76%);
+  }
+
+  .fs-rise { animation: fs-rise .35s ease both; }
+}
+
+@keyframes fs-rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+
+html { scroll-behavior: smooth; }
+#globe { touch-action: pan-y; }
+:focus-visible { outline: 3px solid #F9C70F; outline-offset: 3px; border-radius: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}

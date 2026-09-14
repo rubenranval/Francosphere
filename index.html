@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Francosphère — Les idées de la liberté, en français</title>
+<meta name="description" content="Une bibliothèque de textes libéraux en français, des rencontres en ligne et des clubs de lecture, ouverts aux francophones de quatre continents.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="theme-color" content="#1E1E1E">
+
+<!-- The only third-party origin the page contacts: the Directus content API. -->
+<link rel="preconnect" href="https://content-library.studentsforliberty.fr" crossorigin>
+<link rel="dns-prefetch" href="https://content-library.studentsforliberty.fr">
+<link rel="preconnect" href="https://studentsforliberty.fr">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/montserrat-latin-800-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/roboto-latin-400-normal.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/logo-francosphere.png">
+
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="canonical" href="https://francosphere.studentsforliberty.org/">
+<link rel="alternate" hreflang="fr" href="https://francosphere.studentsforliberty.org/?lang=fr">
+<link rel="alternate" hreflang="en" href="https://francosphere.studentsforliberty.org/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://francosphere.studentsforliberty.org/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Francosphère">
+<meta property="og:title" content="Francosphère — Les idées de la liberté, en français">
+<meta property="og:description" content="Une bibliothèque de textes libéraux en français, des rencontres en ligne et des clubs de lecture, ouverts aux francophones de quatre continents.">
+<meta property="og:url" content="https://francosphere.studentsforliberty.org/">
+<meta property="og:image" content="https://francosphere.studentsforliberty.org/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Francosphère — Les idées de la liberté, en français">
+<meta name="twitter:description" content="Une bibliothèque de textes libéraux en français, des rencontres en ligne et des clubs de lecture.">
+<meta name="twitter:image" content="https://francosphere.studentsforliberty.org/assets/og.jpg">
+
+<!-- The page's only inline script. Structured data has to sit in the served HTML
+     for crawlers, so a strict CSP needs its sha256 hash. See SECURITY.md. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://francosphere.studentsforliberty.org/#org",
+      "name": "Francosphère — Students For Liberty",
+      "alternateName": "Francosphere",
+      "url": "https://francosphere.studentsforliberty.org/",
+      "logo": "https://francosphere.studentsforliberty.org/assets/logo-francosphere.png",
+      "email": "francosphere@studentsforliberty.org",
+      "parentOrganization": { "@type": "Organization", "name": "Students For Liberty", "url": "https://studentsforliberty.org" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://francosphere.studentsforliberty.org/#site",
+      "url": "https://francosphere.studentsforliberty.org/",
+      "name": "Francosphère",
+      "inLanguage": ["fr", "en"],
+      "publisher": { "@id": "https://francosphere.studentsforliberty.org/#org" }
+    }
+  ]
+}
+</script>
+</head>
+<header id="top" class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-ink-deep/80 backdrop-blur-lg">
+  <div class="shell flex h-[66px] items-center gap-7">
+    <a href="#" data-home data-brand class="mr-auto flex items-center gap-3 no-underline"></a>
+    <nav class="hidden gap-7 md:flex">
+      <a href="#about"     data-i18n="nav.about"     class="border-b-2 border-transparent py-1.5 text-[.9rem] font-medium text-paper/70 no-underline hover:border-gold hover:text-paper">Le projet</a>
+      <a href="#library"   data-i18n="nav.library"   class="border-b-2 border-transparent py-1.5 text-[.9rem] font-medium text-paper/70 no-underline hover:border-gold hover:text-paper">Ressources</a>
+      <a href="#work"      data-i18n="nav.work"      class="border-b-2 border-transparent py-1.5 text-[.9rem] font-medium text-paper/70 no-underline hover:border-gold hover:text-paper">Activités</a>
+      <a href="#events"    data-i18n="nav.events"    class="border-b-2 border-transparent py-1.5 text-[.9rem] font-medium text-paper/70 no-underline hover:border-gold hover:text-paper">Événements</a>
+    </nav>
+    <div class="flex items-center rounded-pill border border-white/25 p-0.5" role="group" aria-label="Language">
+      <button data-lang="fr" aria-pressed="true"  class="rounded-pill px-3 py-1 font-display text-[.72rem] font-bold tracking-wide aria-pressed:bg-gold aria-pressed:text-ink">FR</button>
+      <button data-lang="en" aria-pressed="false" class="rounded-pill px-3 py-1 font-display text-[.72rem] font-bold tracking-wide aria-pressed:bg-gold aria-pressed:text-ink">EN</button>
+    </div>
+  </div>
+</header>
+
+<div id="site">
+  <!-- hero + globe -->
+  <section id="network" class="relative overflow-hidden border-b border-white/10 bg-stage pt-[66px]">
+    <div id="heroBg" class="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden="true"></div>
+    <div class="shell relative z-10 grid min-h-[min(760px,calc(100vh_-_66px))] items-center gap-x-7 py-14 lg:grid-cols-[minmax(0,.92fr)_minmax(0,1.08fr)]">
+
+      <div class="relative z-20 max-w-[30rem]">
+        <h1 data-i18n-html="hero.title" class="mb-5 font-display text-[clamp(2.3rem,3.9vw,3.5rem)] font-extrabold leading-none tracking-[-.035em]">
+          Les idées de la liberté, <em class="bg-goldgrad bg-clip-text not-italic text-transparent">en français</em>.
+        </h1>
+        <p data-i18n="hero.lede" class="mb-7 max-w-[28rem] text-[1.04rem] text-paper/80"></p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#library" data-i18n="hero.cta1" class="btn btn-gold no-underline"></a>
+          <a href="#events"  data-i18n="hero.cta2" class="btn btn-ghost no-underline"></a>
+        </div>
+      </div>
+
+      <div class="relative flex min-h-[min(640px,72vh)] items-start justify-end pb-[104px]">
+        <div id="globeWrap" class="relative mt-2 aspect-square w-[min(600px,62vh)] max-w-full shrink-0">
+          <div id="globe" class="absolute inset-0 cursor-grab" role="application" aria-label="Globe interactif des pays du réseau"></div>
+          <div id="labels" class="pointer-events-none absolute inset-0 hidden lg:block" aria-hidden="true"></div>
+        </div>
+        <aside id="panel" aria-live="polite"
+               class="absolute bottom-0 right-0 z-30 flex max-h-[min(360px,58%)] w-[min(340px,86%)] flex-col overflow-hidden rounded border border-white/[.16] bg-[#161616]/70 shadow-[0_24px_60px_-26px_rgba(0,0,0,.9)] backdrop-blur-xl">
+          <div class="flex items-baseline justify-between gap-3 border-b border-white/10 px-5 pb-3 pt-4">
+            <h2 data-i18n="panel.title" class="m-0 font-display text-[.82rem] font-bold"></h2>
+            <span id="panelCount" class="font-mono text-[.7rem] tracking-wider text-paper/60"></span>
+          </div>
+          <div id="panelBody" class="scroll-thin flex-1 overflow-auto p-5"></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- the project -->
+  <section id="about" class="bg-ink py-[88px]">
+    <div class="shell">
+      <div id="aboutBanner" class="mb-12"></div>
+      <div class="rule" aria-hidden="true"></div>
+      <h2 data-i18n="about.title" class="sec-title mb-6"></h2>
+      <p data-i18n="about.lede" class="mb-5 max-w-[26ch] font-display text-[1.28rem] font-semibold leading-snug tracking-[-.02em]"></p>
+      <p data-i18n="about.p1" class="mb-4 max-w-[60ch] text-paper/80"></p>
+      <p data-i18n="about.p2" class="max-w-[60ch] text-paper/80"></p>
+    </div>
+  </section>
+
+  <!-- library -->
+  <section id="library" class="border-y border-white/10 bg-ink-dark py-[88px]">
+    <div class="shell">
+      <div class="mb-11 max-w-[60ch]">
+        <div class="rule" aria-hidden="true"></div>
+        <h2 data-i18n="library.title" class="sec-title mb-3"></h2>
+        <p data-i18n="library.lede" class="m-0 text-[1.03rem] text-paper/80"></p>
+      </div>
+      <div id="libFilters" class="mb-7 flex flex-wrap gap-2" role="group"></div>
+      <div id="libGrid" class="grid gap-3.5 sm:grid-cols-2 xl:grid-cols-3"></div>
+    </div>
+  </section>
+
+  <!-- what we do (photos) -->
+  <section id="work" class="bg-ink py-[88px]">
+    <div class="shell">
+      <div id="gallery" class="grid gap-3.5 md:grid-cols-3"></div>
+    </div>
+  </section>
+
+  <!-- events -->
+  <section id="events" class="bg-ink-deep py-[88px]">
+    <div class="shell">
+      <div class="mb-11 max-w-[60ch]">
+        <div class="rule" aria-hidden="true"></div>
+        <h2 data-i18n="events.title" class="sec-title mb-3"></h2>
+        <p data-i18n="events.lede" class="m-0 text-[1.03rem] text-paper/80"></p>
+      </div>
+      <div id="evFilters" class="mb-7 flex flex-wrap gap-2" role="group"></div>
+      <div id="evList" class="flex flex-col gap-4"></div>
+    </div>
+  </section>
+</div>
+
+<main id="detail" class="hidden"></main>
+
+<footer class="border-t border-white/10 bg-ink-black py-12 text-[.88rem] text-paper/60">
+  <div class="shell flex flex-wrap items-start justify-between gap-6">
+    <div class="max-w-[36ch]">
+      <a href="#" data-home data-brand class="mb-4 flex items-center gap-3 no-underline"></a>
+      <p data-i18n="footer.blurb" class="mt-3"></p>
+    </div>
+    <div id="footLinks" class="flex flex-wrap gap-6"></div>
+    <div class="mt-2 flex w-full flex-wrap gap-2.5 border-t border-white/10 pt-5 font-mono text-[.72rem] tracking-wide opacity-70">
+      <span data-i18n="footer.note"></span><span id="year"></span>
+    </div>
+  </div>
+</footer>
+<script src="vendor/three.min.js" defer></script>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
