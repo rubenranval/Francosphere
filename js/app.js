@@ -52,15 +52,7 @@ function fetchContent() {
 function wire() {
   $$("[data-lang]").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
 
-  $$("[data-home]").forEach(a => a.addEventListener("click", e => {
-    e.preventDefault();
-    history.pushState(null, "", location.pathname + location.search);
-    route();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }));
 
-  /* Event cards carry real hrefs so they can be crawled, copied and opened in a new
-     tab; a plain left click navigates without a reload. */
   document.addEventListener("click", e => {
     const a = e.target.closest && e.target.closest("a[data-event]");
     if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
