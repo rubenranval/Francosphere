@@ -45,7 +45,7 @@ export const CONFIG = {
   footerLinks: [
     { label: { fr: "Students For Liberty", en: "Students For Liberty" }, url: "https://studentsforliberty.org" },
     { label: { fr: "Nous écrire", en: "Email us" }, url: "mailto:francosphere@studentsforliberty.org" },
-    { label: { fr: "Instagram", en: "Instagram" }, url: "https://instagram.com/" }
+    { label: { fr: "Instagram", en: "Instagram" }, url: "https://www.instagram.com/sfl_francosphere" }
   ],
 
   ui: {
